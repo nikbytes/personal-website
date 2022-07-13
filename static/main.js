@@ -1,6 +1,6 @@
 var before = document.getElementById("before");
-var liner = document.getElementById("liner");
-var command = document.getElementById("typer"); 
+var liner = document.getElementById("line");
+var command = document.getElementById("type"); 
 var textarea = document.getElementById("texter"); 
 var terminal = document.getElementById("terminal");
 
@@ -19,11 +19,10 @@ command.innerHTML = textarea.value;
 function enterKey(e) {
   if (e.keyCode == 181) {
     document.location.reload(true);
-  } else {
-    if (e.keyCode == 13) {
+  } if (e.keyCode == 13) {
       commands.push(command.innerHTML);
       git = commands.length;
-      addLine("visitor@fkcodes.com:~$ " + command.innerHTML, "no-animation", 0);
+      addLine("visitor@nlethco.com:~$ " + command.innerHTML, "no-animation", 0);
       commander(command.innerHTML.toLowerCase());
       command.innerHTML = "";
       textarea.value = "";
@@ -42,7 +41,6 @@ function enterKey(e) {
       }
       command.innerHTML = textarea.value;
     }
-  }
 }
 
 function commander(cmd) {
@@ -55,9 +53,6 @@ function commander(cmd) {
       break;
     case "social":
       loopLines(social, "color2 margin", 80);
-      break;
-    case "projects":
-      loopLines(projects, "color2 margin", 80);
       break;
     case "history":
       addLine("<br>", "", 0);

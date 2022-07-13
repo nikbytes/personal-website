@@ -60,11 +60,8 @@ body {
     opacity: 0;
   }
   #liner::before {
-    color: #519975;
-    content: "visitor@fkcodes.com:~$";
-  }
-  #liner.password::before {
-    content: "Password:";
+    color: #c22b2b;
+    content: "visitor@nlethco.com:~$";
   }
   @keyframes show {
     from {

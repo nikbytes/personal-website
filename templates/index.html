@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--script src="static/script.js"></script>
-    <script src="static/main.js"></script-->
+    
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-QJ9TR5T9S2"></script>
+    <script>
+        
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-QJ9TR5T9S2');
+    
+    </script> 
     <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script-->
 <head>
     <meta charset="utf-8">
@@ -16,13 +24,19 @@
 <body>
     <div id="terminal">
         <!--Stuff here-->
+        <a id="before"></a>
     </div>
     <div id="command" onclick="$('texter').focus();">
-    <textarea type="texter" id="texter" onkeyup="typeIt(this,event)" onkeydown="typeIt(this,event); moveIt(this.value.length, event)" onkeypress="typeIt(this, event);" autofocus></textarea>
+    <textarea type="text" id="texter" onkeyup="typeIt(this,event)" onkeydown="typeIt(this,event); 
+        moveIt(this.value.length, event)" onkeypress="typeIt(this, event);" autofocus></textarea>
         <div id="line">
-            ::before
+            visitor@nlethco.com:~$
             <span id="type"></span>
             <b class="cursor" id="cursor" style="left: 0px;">&#9660;</b>
         </div>
     </div>
 </body>
+    <script src="static/script.js"></script>
+    <script src="static/commands.js"></script>
+    <script src="static/main.js"></script>
+</html>
