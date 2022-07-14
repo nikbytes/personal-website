@@ -1,4 +1,4 @@
-var linkedin = "https://www.linkedin.com/in/nikolas-lethco-1b8630200/";
+var linkedin = "https://www.linkedin.com/in/nikolas-lethco/";
 var github = "https://github.com/nikbytes/";
 var email = 'mailto:lethconik@gmail.com';
 
@@ -10,7 +10,7 @@ whois = [
 
 social = [
   "<br>",
-  'linkedin       <a href="' + linkedin + '" target="_blank">linkedin/nikolas-lethco-1b8630200' + "</a>",
+  'linkedin       <a href="' + linkedin + '" target="_blank">linkedin/nikolas-lethco' + "</a>",
   'github         <a href="' + github + '" target="_blank">github/nikolas-lethco' + "</a>",
   "<br>"
 ];
